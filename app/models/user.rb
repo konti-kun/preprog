@@ -23,8 +23,9 @@ class User < ApplicationRecord
       user.password = Devise.friendly_token[0, 20]
       social_profile = user.social_profiles.build
       social_profile.uid = uid
+      social_profile.provider = :line
     else
-      social_profile = user.social_profiles.find(provider: :line)
+      social_profile = user.social_profiles.first
     end
 
     social_profile.token = credentials.token
