@@ -10,6 +10,13 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'devise'
+gem 'devise-i18n'
+gem 'dotenv-rails'
+gem 'erb2haml'
+gem 'haml-rails'
+gem 'omniauth-line'
+gem 'webpacker', '< 5.0'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
